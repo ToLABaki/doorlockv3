@@ -1,6 +1,11 @@
 #!/bin/bash
+# Make the pin available for use
 gpio export 15 out
+# Set the pin in output mode
 gpio -g mode 15 out
+# Turn on the pin to enable the relay (write 1)
 gpio -g write 15 1
+# Wait 3 seconds
 sleep 3
+# Turn the relay off (write 0)
 gpio -g write 15 0

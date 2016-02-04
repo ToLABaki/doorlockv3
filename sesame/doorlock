@@ -1,3 +1,4 @@
 #!/bin/bash
-
+# We use 'nohup' so if we accidentally kill the script the door won't be left
+# open
 /usr/bin/nohup /usr/local/bin/dlock-gpio-command > /dev/null 2> /dev/null &
