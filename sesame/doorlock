@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/bin/nohup /usr/local/bin/dlock-gpio-command > /dev/null 2> /dev/null &

@@ -1,0 +1,6 @@
+#!/bin/bash
+gpio export 15 out
+gpio -g mode 15 out
+gpio -g write 15 1
+sleep 3
+gpio -g write 15 0
